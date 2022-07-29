@@ -1,0 +1,17 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "ilb-modal",
+      "path": "./src/index.ts",
+      "description": "Modal Design System",
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResult",
+          "default": "\"css`\\n    .btn {\\n      background: red\\n    }\\n  `\""
+        }
+      ]
+    }
+  ]
+}

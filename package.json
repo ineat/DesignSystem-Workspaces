@@ -1,0 +1,31 @@
+{
+  "name": "ilab-design-system",
+  "version": "0.0.0",
+  "description": "iLab Design System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish:major": "node ./cli/publish --version=major",
+    "publish:minor": "node ./cli/publish --version=minor",
+    "publish:patch": "node ./cli/publish --version=patch"
+  },
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "./packages/*"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-replace": "^4.0.0",
+    "minimist": "^1.2.5",
+    "rollup-plugin-filesize": "^9.1.2",
+    "rollup-plugin-inline-svg": "^3.0.3",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-postcss-lit": "^2.0.0",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.32.1"
+  }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toaster Component</title>
+    <script type="module" src="./index.js"></script>
+</head>
+<body>
+    <button id="btn">Click Me to show toast !!</button>
+    <ilb-toaster id="toaster" text="My custom message"></ilb-toaster>
+    <script>
+        const toaster = document.getElementById('toaster');
+        const button = document.getElementById('btn');
+        button.addEventListener('click', (e) => {
+            toaster.setAttribute('showToast', true);
+        });
+    </script>
+</body>
+</html>

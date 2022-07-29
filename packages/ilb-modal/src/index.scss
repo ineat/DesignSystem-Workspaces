@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+//colors
+$grey-dark: #323232;
+$grey-light: #DEDEDE;
+$grey: #ABABAB;
+$white: #fff;
+
+// modal
+.modal {
+  position: fixed;
+  top: 40px;
+  left: calc(50% - 40vw);
+  width: 80vw;
+  max-width: 800px;
+  background: $grey-light;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px $grey-dark;
+  overflow: hidden;
+  
+  // modal header
+  &--header {
+    background: $grey-dark;
+    color: $white;
+    padding: 10px;
+  }
+
+  // modal content
+  &--content {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  // modal action
+  &--actions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background: $grey;
+    padding: 10px;
+
+    ilb-button {
+      cursor: pointer
+    }
+  }
+}
+
+

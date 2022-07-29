@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Component</title>
+    <script type="module" src="./index.js"></script>
+    <style>
+        .content {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .content img {
+            margin: 10px;
+        }
+
+        .content p {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="red-bg">
+    <button id="btn">Click Me to show modal !!</button>
+    <ilb-modal id="modal" title="My custom modal title">
+        <div class="content">
+            <img src="https://picsum.photos/seed/picsum/100/100" alt="" />
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, ratione illo iure laboriosam vel iusto amet est dolore? Vitae excepturi eveniet quae error necessitatibus magnam eum dolores accusamus officiis rem!</p>
+        </div>
+    </ilb-modal>
+    <script>
+        const toaster = document.getElementById('modal');
+        const button = document.getElementById('btn');
+        button.addEventListener('click', (e) => {
+            toaster.setAttribute('show', true);
+        });
+    </script>
+</body>
+</html>
